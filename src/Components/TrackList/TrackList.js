@@ -6,6 +6,7 @@ class TrackList extends React.Component {
     render(){
         return(
             <div className="TrackList">
+                <audio id="player" src=""></audio>
                 {
                     this.props.tracks.map(element => {
 

@@ -1,6 +1,6 @@
 let accessToken;
 const clientID = 'aea875170e554c4c853ec985c1bfda3f';
-const redirectURI = 'http://jammingspotifyproj.surge.sh';
+const redirectURI = 'http://localhost:3000/callback';
 
 const Spotify = {
     getAccessToken(){
@@ -38,7 +38,8 @@ const Spotify = {
                     name: track.name,
                     artist: track.artists[0].name,
                     album: track.album.name,
-                    URI: track.uri
+                    URI: track.uri,
+                    preview_URL: track.preview_url
                 }
             })
         })
