@@ -32,6 +32,7 @@ class Track extends React.Component {
     }
     addTrack(){
         this.props.onAdd(this.props.currentTrack);
+        this.setState({show: false});
     }
     removeTrack(){
         this.props.onRemove(this.props.currentTrack);
